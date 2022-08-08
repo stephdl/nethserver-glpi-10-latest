@@ -12,6 +12,7 @@ Source1: https://github.com/glpi-project/glpi/releases/download/%{glpi_version}/
 Source2: glpi-local_define.php
 Source3: glpi-downstream.php
 Source4: glpi-logrotate
+Conflicts: nethserver-glpi-latest
 
 BuildRequires: nethserver-devtools
 
