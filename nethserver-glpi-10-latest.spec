@@ -1,5 +1,5 @@
 Name: nethserver-glpi-10-latest
-Version: 1.0.8
+Version: 1.0.9
 Release: 1%{?dist}
 Summary: Configure glpi
 Source: %{name}-%{version}.tar.gz
@@ -126,6 +126,9 @@ if [ $1 == 0 ] ; then
 fi
 
 %changelog
+* Mon Aug 08 2022 stephane de Labrusse <stephdl@de-labrusse.fr> 1.0.9
+- Release  10.0.2 as a standalone rpm
+
 * Sun Apr 24 2022 stephane de Labrusse <stephdl@de-labrusse.fr> 1.0.8
 - Go to 10.0.0
 
