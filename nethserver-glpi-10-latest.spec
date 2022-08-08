@@ -1,4 +1,4 @@
-Name: nethserver-glpi-latest
+Name: nethserver-glpi-10-latest
 Version: 1.0.8
 Release: 1%{?dist}
 Summary: Configure glpi

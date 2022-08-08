@@ -1,11 +1,11 @@
 {
-  "id": "nethserver-glpi-latest",
+  "id": "nethserver-glpi-10-latest",
   "name": "glpi",
   "summary": "Provides an IT Asset Management and issue tracking system",
   "description": "Provides an IT Asset Management and issue tracking system",
   "url": "",
-  "homepage": "https://github.com/stephdl/nethserver-glpi-latest",
-  "provides": ["nethserver-glpi-latest"],
+  "homepage": "https://github.com/stephdl/nethserver-glpi-10-latest",
+  "provides": ["nethserver-glpi-10-latest"],
   "release": {
     "version": "_RELEASE_"
   },
@@ -15,11 +15,11 @@
   },
   "author": {
     "name": "Stephane de Labrusse",
-    "url": "https://github.com/stephdl/nethserver-glpi-latest",
+    "url": "https://github.com/stephdl/nethserver-glpi-10-latest",
     "email": "stephdl@de-labrusse.fr"
   },
   "infoapi": {
-    "path": "nethserver-glpi-latest/read"
+    "path": "nethserver-glpi-10-latest/read"
   },
   "icon": "logo.png",
   "external": true

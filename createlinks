@@ -19,7 +19,7 @@
 
 use esmith::Build::CreateLinks  qw(:all);
 
-event_templates('nethserver-glpi-latest-update', qw(
+event_templates('nethserver-glpi-10-latest-update', qw(
     /etc/httpd/conf.d/glpi.conf
     /etc/httpd/conf.d/zzz_glpi.conf
     /etc/glpi/config_db.php
@@ -28,13 +28,13 @@ event_templates('nethserver-glpi-latest-update', qw(
     /etc/opt/rh/rh-mariadb105/my.cnf.d/mariadb-glpi-server.cnf
 ));
 
-event_actions('nethserver-glpi-latest-update', qw(
+event_actions('nethserver-glpi-10-latest-update', qw(
   initialize-default-databases 00
-  nethserver-glpi-latest-migrate-files-folder 10
-  nethserver-glpi-latest-conf 40
+  nethserver-glpi-10-latest-migrate-files-folder 10
+  nethserver-glpi-10-latest-conf 40
 ));
 
-event_services('nethserver-glpi-latest-update', qw(
+event_services('nethserver-glpi-10-latest-update', qw(
    httpd reload
    php81-php-fpm restart
    rh-mariadb105-mariadb@glpi restart 
@@ -46,9 +46,9 @@ event_services($event, 'httpd' => 'reload');
 
 # link to backup and restore event
 event_actions("pre-backup-data", qw(
-  nethserver-glpi-latest-rh-mariadb105-dump-database 60
+  nethserver-glpi-10-latest-rh-mariadb105-dump-database 60
 ));
 
 event_actions("post-restore-data", qw(
-  nethserver-glpi-latest-restore-rh-mariadb105-database 03
+  nethserver-glpi-10-latest-restore-rh-mariadb105-database 03
 ));
