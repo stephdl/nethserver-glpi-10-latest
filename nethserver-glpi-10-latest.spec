@@ -127,6 +127,9 @@ if [ $1 == 0 ] ; then
 fi
 
 %changelog
+* Wed Apr 05 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.11-1
+- go to 10.0.6 
+
 * Sat Oct 15 2022 stephane de Labrusse <stephdl@de-labrusse.fr> 1.0.11
 - Upgrade to 10.0.3
 
