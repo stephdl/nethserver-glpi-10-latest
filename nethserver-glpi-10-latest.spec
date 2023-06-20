@@ -1,12 +1,12 @@
 Name: nethserver-glpi-10-latest
-Version: 1.0.12
+Version: 1.0.13
 Release: 1%{?dist}
 Summary: Configure glpi
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
 URL: %{url_prefix}/%{name}
 License: GPL
-%define glpi_version 10.0.6
+%define glpi_version 10.0.7
 %define glpi_name glpi
 Source1: https://github.com/glpi-project/glpi/releases/download/%{glpi_version}/%{glpi_name}-%{glpi_version}.tgz 
 Source2: glpi-local_define.php
@@ -127,6 +127,8 @@ if [ $1 == 0 ] ; then
 fi
 
 %changelog
+* Tue Jun 20 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.13-1
+- go to 10.0.7
 * Wed Apr 05 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.12-1
 - go to 10.0.6
 
