@@ -1,5 +1,5 @@
 Name: nethserver-glpi-10-latest
-Version: 1.0.13
+Version: 1.0.14
 Release: 1%{?dist}
 Summary: Configure glpi
 Source: %{name}-%{version}.tar.gz
@@ -127,6 +127,9 @@ if [ $1 == 0 ] ; then
 fi
 
 %changelog
+* Mon Jul 03 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.14-1
+- Virtualhosts and new prop DomainName
+
 * Tue Jun 20 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.13-1
 - go to 10.0.7
 * Wed Apr 05 2023 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.12-1
